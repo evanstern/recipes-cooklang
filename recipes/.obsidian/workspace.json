@@ -13,10 +13,10 @@
             "state": {
               "type": "cook",
               "state": {
-                "file": "entrees/one-pot-ratatouille-pasta.cook"
+                "file": "entrees/butter-paneer.cook"
               },
               "icon": "document-cook",
-              "title": "one-pot-ratatouille-pasta"
+              "title": "butter-paneer"
             }
           }
         ]
@@ -169,19 +169,21 @@
   },
   "active": "0c4ee6f8ef7da04f",
   "lastOpenFiles": [
-    "entrees/vegitable-qorma/vegitable-qorma.jpg",
+    "soup/lentil-soup.jpg",
+    "soup/lentil-soup.cook",
+    "entrees/vegitable-qorma.jpg",
+    "entrees/vegitable-qorma.cook",
+    "soup/lentil-soup/lentil-soup.cook",
     "entrees/vegitable-qorma/vegitable-qorma.cook",
+    "entrees/one-pot-ratatouille-pasta.cook",
+    "entrees/vegitable-qorma/vegitable-qorma.jpg",
     "entrees/vegitable-qorma",
     "soup/lentil-soup/lentil-soup.jpg",
-    "soup/lentil-soup/lentil-soup.cook",
     "soup/lentil-soup",
-    "soup/lentil-soup.cook",
     "entrees/butter-paneer.cook",
     "entrees/cheesy-green-chile-bean-bake.cook",
     "soup/vegan-potato-soup.cook",
-    "entrees/one-pot-ratatouille-pasta.cook",
     "entrees/one-pot-ratatouille-pasta.md",
-    "entrees",
     "Welcome.md"
   ]
 }
