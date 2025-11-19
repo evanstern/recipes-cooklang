@@ -1,0 +1,3 @@
+# Shopping List
+# Format: path<TAB>name<TAB>scale
+
