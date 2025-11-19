@@ -11,14 +11,12 @@
             "id": "0c4ee6f8ef7da04f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "cook",
               "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false
+                "file": "entrees/one-pot-ratatouille-pasta.cook"
               },
-              "icon": "lucide-file",
-              "title": "Welcome"
+              "icon": "document-cook",
+              "title": "one-pot-ratatouille-pasta"
             }
           }
         ]
@@ -172,9 +170,11 @@
   "active": "0c4ee6f8ef7da04f",
   "lastOpenFiles": [
     "soup/vegan-potato-soup.cook",
-    "entree",
-    "soup",
+    "entrees/one-pot-ratatouille-pasta.cook",
+    "entrees/one-pot-ratatouille-pasta.md",
     "entrees",
-    "Welcome.md"
+    "Welcome.md",
+    "entree",
+    "soup"
   ]
 }
