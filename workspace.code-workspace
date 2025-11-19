@@ -3,5 +3,25 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.DS_Store": true,
+			"**/.AppleDouble": true,
+			"**/.LSOverride": true,
+			"**/node_modules": true,
+			"**/__pycache__": true
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/.git": true
+		},
+		"editor.formatOnSave": true
+	},
+	"extensions": {
+		"recommendations": [
+			"cooklang.cooklang",
+			"esbenp.prettier-vscode"
+		]
+	}
 }

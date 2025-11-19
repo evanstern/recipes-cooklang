@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor and IDE
+.vscode/
+*.sw?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore secrets and OS files
+.env
+.env.local
+.env.*.local
+
+# Build outputs / caches
+build/
+dist/
+tmp/
+temp/
+
+# Images and media generated locally
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+
+# Misc
+Thumbs.db
+ehthumbs.db
+node_modules/
+
