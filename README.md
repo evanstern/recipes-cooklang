@@ -37,6 +37,10 @@ used elsewhere, and `tags-index.md` mirrors the repository-wide tag usage.
   python scripts/suggest_tags.py entrees/pasta-pomodoro.cook
   OPENAI_API_KEY=... python scripts/suggest_tags.py --json-only --write soup/lentil-soup.cook
   ```
+- `scripts/download_cook_image.sh`: Downloads the `image:` metadata URL from a single `.cook`
+  recipe, saves it beside the source recipe as `<recipe-name>.jpg`, converts as needed via
+  `magick`, and optionally strips the metadata with `--update`. Run with `--json-only` for
+  machine-readable output.
 - `scripts/deploy.sh`: Simple SSH deploy to a host/dir defined in `.env` (`DEPLOY_HOST`,
   `DEPLOY_USER`, `DEPLOY_REPO_DIR`). It sources `.env` and runs `git pull` on the remote.
 
@@ -65,6 +69,7 @@ used elsewhere, and `tags-index.md` mirrors the repository-wide tag usage.
 ## Running the scripts
 - Regenerate the tag index after recipe edits: `python scripts/generate_tag_index.py`
 - Suggest tags for a recipe: see the `scripts/suggest_tags.py` examples above.
+- Download/update recipe images: `./scripts/download_cook_image.sh [--json-only] [--update] path/to/recipe.cook`
 - Run the deploy helper with its `.env` configured: `scripts/deploy.sh`.
 
 When done working, `deactivate` to leave the virtual environment.
