@@ -54,11 +54,13 @@ def get_last_deployed_commit(app_folder):
             temp.write(file_node.open().content)
             temp_path = temp.name
         
-        with open(temp_path, 'r') as f:
-            commit_hash = f.read().strip()
-        
-        os.remove(temp_path)
-        return commit_hash
+        try:
+            with open(temp_path, 'r') as f:
+                commit_hash = f.read().strip()
+            return commit_hash
+        finally:
+            if os.path.exists(temp_path):
+                os.remove(temp_path)
     except KeyError:
         return None
     except Exception as e:
@@ -72,7 +74,8 @@ def update_last_deployed_commit(app_folder, commit_hash):
         temp.write(commit_hash)
         temp_path = temp.name
     
-    # Upload (overwrite)
+    final_path = os.path.join(os.path.dirname(temp_path), STATE_FILE_NAME)
+    
     try:
         # Delete existing if present to ensure clean upload (though upload usually overwrites)
         try:
@@ -80,22 +83,21 @@ def update_last_deployed_commit(app_folder, commit_hash):
         except KeyError:
             pass
             
-        with open(temp_path, 'rb') as f:
-             retry_api_call(app_folder.upload, f)
-             
-        # Rename if needed? No, upload uses the filename from the file object or path?
-        # pyicloud upload usually takes the filename from the file path if not specified.
-        # Wait, temp file has random name. We need to ensure it has the right name.
-        # Let's rename the temp file locally first.
-        final_path = os.path.join(os.path.dirname(temp_path), STATE_FILE_NAME)
+        # Rename the temp file locally first to ensure correct filename in iCloud
+        if os.path.exists(final_path):
+            os.remove(final_path)
         os.rename(temp_path, final_path)
         
         with open(final_path, 'rb') as f:
              retry_api_call(app_folder.upload, f)
              
-        os.remove(final_path)
     except Exception as e:
         print(f"Error updating state file: {e}")
+    finally:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+        if os.path.exists(final_path):
+            os.remove(final_path)
 
 def get_git_changes(last_hash, current_hash):
     """Get list of changed files between commits."""
