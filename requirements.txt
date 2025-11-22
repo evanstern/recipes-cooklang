@@ -1,2 +1,3 @@
 openai>=1.0
-
+pyicloud>=2.2.0
+python-dotenv
