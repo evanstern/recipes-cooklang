@@ -1,17 +1,17 @@
 # Tag Index
 
-Generated on 2025-11-21T07:37:50.995381Z by `scripts/generate_tag_index.py`
+Generated on 2025-11-22T08:31:57.991896Z by `scripts/generate_tag_index.py`
 
 | Tag | Count |
 | --- | ----- |
-| dinner | 28 |
-| vegetarian | 28 |
-| main dish | 24 |
-| gluten free | 20 |
-| vegan | 16 |
-| soup | 13 |
+| dinner | 29 |
+| vegetarian | 29 |
+| main dish | 25 |
+| gluten free | 21 |
+| vegan | 17 |
+| soup | 14 |
 | american | 11 |
-| vegetable | 9 |
+| vegetable | 10 |
 | beans | 7 |
 | mediterranean | 7 |
 | pasta | 7 |
@@ -19,6 +19,7 @@ Generated on 2025-11-21T07:37:50.995381Z by `scripts/generate_tag_index.py`
 | main course | 6 |
 | curry | 5 |
 | comfort food | 4 |
+| greek | 4 |
 | indian | 4 |
 | mushroom | 4 |
 | one pot | 4 |
@@ -29,7 +30,6 @@ Generated on 2025-11-21T07:37:50.995381Z by `scripts/generate_tag_index.py`
 | winter | 4 |
 | easy | 3 |
 | entree | 3 |
-| greek | 3 |
 | instant pot | 3 |
 | mexican | 3 |
 | quick | 3 |
